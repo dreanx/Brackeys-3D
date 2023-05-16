@@ -6,7 +6,7 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collisionInfo)
     {
-        Debug.Log(collisionInfo.collider.attachedRigidbody);
+        Debug.Log(collisionInfo.collider.attachedRigidbody); 
     }
 
 }
