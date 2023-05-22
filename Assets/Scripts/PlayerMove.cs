@@ -39,4 +39,6 @@ rb.AddForce(0, 0, -forwardForce * Time.deltaTime);
 if (Input.GetKey(KeyCode.Z))
 {
 rb.AddForce(0, 0, forwardForce * Time.deltaTime);
-} */
+}
+
+*/
