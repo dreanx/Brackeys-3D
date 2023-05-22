@@ -18,8 +18,6 @@ public class PlayerMove : MonoBehaviour
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
-
-        Debug.Log(rb.velocity);
     }
 }
 
