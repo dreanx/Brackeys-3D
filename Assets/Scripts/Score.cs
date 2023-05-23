@@ -1,11 +1,15 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
     public Transform player;
-    public TMP_Text scoreText;
+    private TMP_Text scoreText;
+
+    private void Start()
+    {
+        scoreText = GetComponent<TMP_Text>();
+    }
 
     private void Update()
     {
