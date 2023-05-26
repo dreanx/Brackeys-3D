@@ -12,7 +12,6 @@ public class PlayerCollision : MonoBehaviour
             //GetComponent<PlayerMove>().enabled = false;
 
             FindObjectOfType<GameManager>().EndGame();
-
         }
     }
 }
