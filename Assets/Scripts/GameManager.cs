@@ -9,15 +9,15 @@ public class GameManager : MonoBehaviour
 
     public GameObject completeLevelUI;
 
-    public void CompleteLevel()
+    public void CompleteLevel() // What happens when we finish the level
     {
-        completeLevelUI.SetActive(true);
+        completeLevelUI.SetActive(true); // Set the Canvas GO "Level Complete" from invisible to visible 
     }
 
-    public void EndGame()
+    public void EndGame() // What happens if we hit an obstacle or fall
 
     {
-        if (gameHasEnded == false)
+        if (gameHasEnded == false) // Make it restart once if we fail
         {
             gameHasEnded = true;
             Debug.Log("Game Over");
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Restart()
+    private void Restart() // Invoked when we hit an obstable or fail  (after setting gameHadEnded to true)
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Returns the name of our current scene and loads it
         //Same as :
